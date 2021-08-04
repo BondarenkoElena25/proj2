@@ -1,0 +1,5 @@
+__pycache__
+.idea
+proj2/__pycache__/settings.cpython-38.pyc
+proj2/__pycache__/urls.cpython-38.pyc
+*.pyc
