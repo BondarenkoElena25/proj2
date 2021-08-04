@@ -10,3 +10,12 @@ def about(request):
 
 def info(request):
     return HttpResponse("<h3>Information</h3><br><a href='http://127.0.0.1:8000'>Home</a><br><a href='http://127.0.0.1:8000/about'>About</a>")
+
+def templ(request):
+    ar = [1,2]
+    temp = 'Hello template'
+    is_good = True
+    data =  {'temp': temp,
+             'is_good': is_good,
+             'ar':ar}
+    return render(request, 'block/index.html', data)
